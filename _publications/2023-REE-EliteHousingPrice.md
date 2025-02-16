@@ -1,9 +1,9 @@
 ---
-title: "The Heterogeneous Impact of House Purchase Limits Policy on Housing Prices"
+title: "The Heterogeneous Impact of House Purchase Limits Policy on Housing Prices: Comparison between elite and non-elite school district houses"
 collection: publications
 category: manuscripts
 permalink: /publication/2023-REE-EliteHousingPrice
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'This paper examine the heterogeneous effect of housing purchase limits policy on the price of elite school district houses (ESDH) and non-elite school district houses. We find that the price of ESDH has increased greatly after the limitation, and that the limits policy may have exacerbated the educational capitalization.'
 date: 2023-07-27
 venue: 'Real Estate Economics'
 paperurl: 'https://doi.org/10.1111/1540-6229.12452'
