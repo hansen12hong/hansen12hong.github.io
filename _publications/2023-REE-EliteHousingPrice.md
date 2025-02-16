@@ -1,5 +1,5 @@
 ---
-title: "The Heterogeneous Impact of House Purchase Limits Policy on Housing Prices: Comparison between elite and non-elite school district houses"
+title: "The Heterogeneous Impact of House Purchase Limits Policy on Housing Prices: Comparison between Elite and Non-elite School District Houses"
 collection: publications
 category: manuscripts
 permalink: /publication/2023-REE-EliteHousingPrice
