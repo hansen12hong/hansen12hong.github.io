@@ -23,7 +23,7 @@ repository               : "hansen12hong/hansen12hong.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Hai Hong (洪海)"
+  name             : # "Hai Hong (洪海)"
   pronouns         : # example: "she/her"  
   bio              : # "An ongoing PhD"
   location         : "Hangzhou, China"
