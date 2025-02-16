@@ -22,7 +22,7 @@ repository               : "hansen12hong/hansen12hong.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "photo.png"
   name             : # "Hai Hong (洪海)"
   pronouns         : # example: "she/her"  
   bio              : # "An ongoing PhD"
