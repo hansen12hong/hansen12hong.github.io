@@ -3,7 +3,7 @@ title: "When the Fire Ends: Straw Burning, Regulation, and Pollution Substitutio
 collection: CAER-IFPRI Best Paper Award
 category: working_papers
 permalink: /publication/2025-01-31-straw-burning-regulation
-excerpt: 'This paper examines the effects of straw burning regulations on pollution substitution and received the CAER-IFPRI Best Paper Award.'
+excerpt: 'This paper examines the consequences of straw burning regulation in China. We find that the regulation reduces burning activities and air pollution. However, farmers responds to the policy by increasing fertilizer and pesticide usage, leading to unintended water pollution.'
 date: 2025-01-31
 venue: 'CAER-IFPRI Best Paper Award'
 paperurl: ''
