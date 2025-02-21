@@ -8,3 +8,5 @@ date: 2025-01-31
 venue: 'CAER-IFPRI Best Paper Award'
 paperurl: ''
 ---
+
+Environmental regulations can trigger unintended pollution externalities if they lack well-designed economic incentives or fail to account for the responses of polluters. This paper examines the effectiveness and unintended consequences of the Universal Prohibition on Straw Burning (UPSB) policy in China. By exploiting a generalized difference-in-differences design, we find that the UPSB policy significantly reduces agricultural fires and thereby air pollution through top-down campaign-style enforcement. However, as straw burning is commonly used to kill pests and fertilize the soil, the UPSB policy also increases the use of chemical fertilizers and pesticides, leading to magnified water pollution. Our findings highlight the im-portance of considering the potential responses of individuals subject to the regulation when conducting the policy evaluation. 
