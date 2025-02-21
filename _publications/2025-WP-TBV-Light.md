@@ -3,7 +3,7 @@ title: "In the Name of Love: Policy Imitation, Political Incentives, and Local E
 collection: Working Paper
 category: working_papers
 permalink: /publication/2025-WP-TBV-Light
-excerpt: 'This paper investigates the economic impacts of the "Taobao Villages (TBVs)" program in China, a bottom-up pilot on rural e-commerce that is imitated na-tionwide under top-down directives. Contrary to previous findings that confirm the positive role of TBVs in promoting village economies, our nationwide analysis finds that the establishment of TBVs significantly reduces townships' night light. Suugestive evidence shows that the strategic behavior of local governments could be the potential channel.'
+excerpt: 'This paper investigates the economic impacts of the "Taobao Villages (TBVs)" program in China, a bottom-up pilot on rural e-commerce that is imitated na-tionwide under top-down directives. Contrary to previous findings that confirm the positive role of TBVs in promoting village economies, our nationwide analysis finds that the establishment of TBVs significantly reduces night light of townships. Suugestive evidence shows that the strategic behavior of local governments could be the potential channel.'
 date: 2025-01-31
 venue: 'Working Paper'
 paperurl: '/files/2025-WP-TBV-Light.pdf'
