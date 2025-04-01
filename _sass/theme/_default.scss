@@ -27,9 +27,11 @@ $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
+$light-gray : #f0f0f0; // 定义一个浅灰色变量
+
 :root {
-    --global-base-color                 : #{$gray};
-    --global-bg-color                   : #{$lighter-gray};
+    --global-base-color : #{$gray};
+    --global-bg-color : #{$light-gray}; // 将页面主体的背景色设置为浅灰色
     --global-border-color               : #{$lighter-gray};
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};

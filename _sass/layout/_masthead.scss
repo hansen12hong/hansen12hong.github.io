@@ -21,7 +21,7 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
-    background: var(--global-masthead-bg-color);
+    background: #fff; // 将导航栏背景色设置为白色
 
     @include breakpoint($x-large) {
       max-width: $x-large;
