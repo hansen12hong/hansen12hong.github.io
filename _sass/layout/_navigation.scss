@@ -218,6 +218,8 @@
     align-items: center;
     width: 100%;
     min-width: 200px;
+    flex-wrap: nowrap;
+    overflow-x: visible;
 
     li {
       display: inline-block;
@@ -225,7 +227,8 @@
 
       &:first-child {
         font-weight: bold;
-        text-wrap: wrap;
+        white-space: normal;
+        word-wrap: break-word;
 
         a {
           margin-left: 0;
