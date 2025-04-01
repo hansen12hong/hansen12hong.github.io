@@ -14,7 +14,7 @@ Welcome! I'm a second year PhD from [School of Public Affairs](https://www.spa.z
 My research primarily focuses on environmental economics and development economics, with a particular emphasis on:
 - Environmental Regulation and its Potential Consequences
 - Agricultural Economics and Rural Development
-- Political Economy and Chinese Economics
+- Political Economy and Chinese Economy
 
 **Contact**
 
