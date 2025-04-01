@@ -44,6 +44,7 @@
     padding: 1em 0;
     clear: both;
     list-style-type: none;
+    width: 100%;
   }
 }
 
@@ -57,4 +58,8 @@
     padding-right: 2em;
     font-weight: 700;
   }
+}
+
+.masthead__inner-wrap {
+  width: 100%;
 }
