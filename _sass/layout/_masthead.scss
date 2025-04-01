@@ -4,7 +4,7 @@
 
 .masthead {
   position: fixed;
-  background: var(--global-masthead-bg-color);
+  background: #fff;
   border-bottom: 1px solid var(--global-border-color);
   height: $masthead-height;
   top: 0;
@@ -21,7 +21,7 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
-    background: #fff; // 将导航栏背景色设置为白色
+    background-color: #fff; // 将导航栏背景色设置为白色
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -49,7 +49,7 @@
 }
 
 .masthead__menu-item {
-  background-color: var(--global-masthead-bg-color);
+  background-color: #fff;
   display: block;
   list-style-type: none;
   white-space: nowrap;
