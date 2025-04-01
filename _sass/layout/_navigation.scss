@@ -213,14 +213,13 @@
   }
 
   .visible-links {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     min-width: 200px;
     flex-wrap: wrap;
     overflow-x: auto;
-    display: flex !important;
 
     li {
       display: inline-block;
@@ -270,7 +269,7 @@
   }
 
   .hidden-links {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     right: 0;
