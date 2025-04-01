@@ -174,7 +174,9 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  width: 100%;
+  max-width: $x-large;
+  margin: 0 auto;
   background: #fff;
 
   a {
@@ -203,10 +205,13 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
 
     li {
-      display: table-cell;
+      display: inline-block;
       vertical-align: middle;
 
       &:first-child {
@@ -252,6 +257,7 @@
   }
 
   .hidden-links {
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;

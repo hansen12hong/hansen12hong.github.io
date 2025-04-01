@@ -19,13 +19,12 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 1em 2em;
     font-family: $sans-serif-narrow;
-    background-color: #fff; // 将导航栏背景色设置为白色
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
+    background-color: #fff;
+    max-width: $x-large;
+    margin: 0 auto;
+    width: 100%;
 
     nav {
       z-index: 10;
