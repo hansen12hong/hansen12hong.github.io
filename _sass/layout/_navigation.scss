@@ -218,8 +218,9 @@
     align-items: center;
     width: 100%;
     min-width: 200px;
-    flex-wrap: nowrap;
-    overflow-x: visible;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    display: flex !important;
 
     li {
       display: inline-block;
