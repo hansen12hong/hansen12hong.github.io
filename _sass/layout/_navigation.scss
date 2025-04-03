@@ -192,7 +192,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    min-width: 200px;
+    min-width: 100px;
     height: 100%;
     padding: 0.5rem 0;
     flex-wrap: wrap;
@@ -212,18 +212,18 @@
     }
   }
 
-  // button {
-  //   position: absolute;
-  //   height: 2.5rem;
-  //   right: 0;
-  //   padding: 0 0.5rem;
-  //   border: 0;
-  //   outline: none;
-  //   background-color: var(--global-base-color);
-  //   color: #fff;
-  //   cursor: pointer;
-  //   z-index: 100;
-  // }
+  button {
+    position: absolute;
+    height: 2.5rem;
+    right: 0;
+    padding: 0 0.5rem;
+    border: 0;
+    outline: none;
+    background-color: var(--global-base-color);
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+  }
 
   .visible-links {
     display: flex;
