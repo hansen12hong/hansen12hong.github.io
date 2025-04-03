@@ -187,19 +187,6 @@
   margin: 0 auto;
   background: #fff;
 
-  .visible-links {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    min-width: 100px;
-    height: 100%;
-    padding: 0.5rem 0;
-    flex-wrap: wrap;
-    overflow: visible;
-    background: #fff;
-  }
-
   a {
     display: block;
     margin: 0 1rem;
@@ -231,15 +218,12 @@
     align-items: center;
     width: 100%;
     min-width: 200px;
-    height: 100%;
-    padding: 0.5rem 0;
     flex-wrap: wrap;
-    overflow: visible;
+    overflow-x: auto;
 
     li {
-      display: flex;
-      align-items: center;
-      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
 
       &:first-child {
         font-weight: bold;
