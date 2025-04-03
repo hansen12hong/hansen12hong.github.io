@@ -185,7 +185,7 @@
   width: 100%;
   max-width: $x-large;
   margin: 0 auto;
-  background: #a5a2a2a1;
+  background: #838282;
 
   .visible-links {
     display: flex;
@@ -197,7 +197,7 @@
     padding: 0.5rem 0;
     flex-wrap: wrap;
     overflow: visible;
-    background: #a5a2a2a1;
+    background: #fff;
   }
 
   a {
@@ -212,18 +212,18 @@
     }
   }
 
-  button {
-    position: absolute;
-    height: 2.5rem;
-    right: 0;
-    padding: 0 0.5rem;
-    border: 0;
-    outline: none;
-    background-color: var(--global-base-color);
-    color: #fff;
-    cursor: pointer;
-    z-index: 100;
-  }
+  // button {
+  //   position: absolute;
+  //   height: 2.5rem;
+  //   right: 0;
+  //   padding: 0 0.5rem;
+  //   border: 0;
+  //   outline: none;
+  //   background-color: var(--global-base-color);
+  //   color: #fff;
+  //   cursor: pointer;
+  //   z-index: 100;
+  // }
 
   .visible-links {
     display: flex;
