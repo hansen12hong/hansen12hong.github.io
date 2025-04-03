@@ -218,12 +218,15 @@
     align-items: center;
     width: 100%;
     min-width: 200px;
+    height: auto;
+    padding: 0.5rem 0;
     flex-wrap: wrap;
-    overflow-x: auto;
+    overflow: visible;
 
     li {
-      display: inline-block;
-      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      height: 100%;
 
       &:first-child {
         font-weight: bold;
