@@ -5,10 +5,10 @@
 *
 */
 
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $hlinks = $('#site-nav .hidden-links');
+var $nav = $('.greedy-nav');
+var $btn = $('.greedy-nav button');
+var $vlinks = $('.greedy-nav .visible-links');
+var $hlinks = $('.greedy-nav .hidden-links');
 
 var breaks = [];
 
