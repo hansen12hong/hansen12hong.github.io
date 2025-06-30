@@ -187,6 +187,11 @@
   margin: 0 auto;
   background: #fff;
 
+  .masthead__menu-item--fixed {
+    display: block !important;
+    order: 1;
+  }
+
   a {
     display: block;
     margin: 0 1rem;
