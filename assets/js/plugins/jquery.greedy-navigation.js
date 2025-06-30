@@ -19,13 +19,14 @@ function updateNav() {
   // The visible list is overflowing the nav
   if($vlinks.width() > availableSpace) {
 
-    while ($vlinks.width() > availableSpace && $vlinks.children('*:not(.masthead__menu-item--lg)').length > 0) {
+    // 确保主页和研究链接始终可见
+    while ($vlinks.width() > availableSpace && $vlinks.children('*:not(.masthead__menu-item--lg):not(:nth-child(2))').length > 0) {
 
       // Record the width of the list
       breaks.push($vlinks.width());
 
-      // Move item to the hidden list
-      $vlinks.children('*:not(.masthead__menu-item--lg)').last().prependTo($hlinks);
+      // Move item to the hidden list，但保留主页和研究链接
+      $vlinks.children('*:not(.masthead__menu-item--lg):not(:nth-child(2))').last().prependTo($hlinks);
 
       availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
       
