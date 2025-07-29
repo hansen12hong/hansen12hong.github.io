@@ -235,8 +235,8 @@
   
   .masthead__menu-item--fixed {
     position: absolute;
-    left: 33.33%; /* 将Research链接放置在导航栏1/3的位置 */
-    transform: translateX(-50%); /* 使链接文本居中于1/3位置 */
+    left: 66.67%; /* 将Research链接放置在导航栏2/3的位置 */
+    transform: translateX(-50%); /* 使链接文本居中于2/3位置 */
     
     @media (max-width: 768px) {
       position: static; /* 在小屏幕上取消绝对定位 */
