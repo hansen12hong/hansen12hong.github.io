@@ -5,7 +5,7 @@ category: working_papers
 permalink: /publication/2025-WP-Straw-Burning-Regulation
 excerpt: 'This paper examines the consequences of straw burning regulation in China. We find that the regulation reduces burning activities and air pollution. However, farmers responds to the policy by increasing fertilizer and pesticide usage, leading to unintended water pollution.'
 date: 2025-01-31
-venue: 'Revise and Resubmit at Journal of Development Economics \n CAER-IFPRI Best Paper Award'
+venue: 'Revise and Resubmit at Journal of Development Economics CAER-IFPRI Best Paper Award'
 paperurl: '/files/2025-WP-Straw-Burning-Regulation.pdf'
 ---
 
