@@ -45,9 +45,9 @@
     {% endif %}
   </p>
 
-  <!-- Abstract/Excerpt - only show Read more for long excerpts (>350 chars) -->
+  <!-- Abstract/Excerpt - only show Read more for very long excerpts (RSUE paper >500 chars) -->
   {% if post.excerpt %}
-    {% if excerpt_length > 350 %}
+    {% if excerpt_length > 500 %}
     <div class="pub-abstract-container">
       <div class="pub-abstract" onclick="this.classList.toggle('expanded')">
         {{ post.excerpt | markdownify | strip_html }}
