@@ -16,11 +16,11 @@
   <!-- Status Badge -->
   <div class="pub-badges">
     {% if post.category == 'manuscripts' %}
-      <span class="pub-badge pub-badge--published"><i class="fas fa-check-circle"></i> Published</span>
-    {% elsif post.venue contains 'Revise' or post.venue contains 'R&R' %}
-      <span class="pub-badge pub-badge--rr"><i class="fas fa-sync-alt"></i> R&R</span>
+      <span class="pub-badge pub-badge--published">Published</span>
+    {% elsif post.venue contains 'Revise' or post.venue contains 'R&R' or post.venue contains 'Resubmit' %}
+      <span class="pub-badge pub-badge--rr">Under Review</span>
     {% else %}
-      <span class="pub-badge pub-badge--wp"><i class="fas fa-file-alt"></i> Working Paper</span>
+      <span class="pub-badge pub-badge--wp">Working Paper</span>
     {% endif %}
   </div>
 
@@ -36,16 +36,19 @@
 
   <!-- Venue and Year -->
   <p class="pub-venue">
-    <span class="venue-name">{{ post.venue }}</span>
-    {% if post.date %}
-      <span class="pub-year"> ({{ post.date | date: "%Y" }})</span>
+    {% if post.category == 'manuscripts' %}
+      <span class="venue-name">{{ post.venue }}</span>, {{ post.date | date: "%Y" }}
+    {% elsif post.venue contains 'Revise' or post.venue contains 'R&R' or post.venue contains 'Resubmit' %}
+      <span class="venue-status">{{ post.venue }}</span>
+    {% else %}
+      <span class="venue-name">{{ post.venue }}</span>
     {% endif %}
   </p>
 
   <!-- Abstract/Excerpt -->
   {% if post.excerpt %}
   <div class="pub-abstract">
-    {{ post.excerpt | markdownify | strip_html | truncatewords: 60 }}
+    {{ post.excerpt | markdownify | strip_html | truncatewords: 50 }}
   </div>
   {% endif %}
 
@@ -54,7 +57,7 @@
     {% if post.paperurl %}
       {% if post.paperurl contains 'doi.org' %}
         <a href="{{ post.paperurl }}" class="pub-link pub-link--doi" target="_blank">
-          <i class="fas fa-external-link-alt"></i> DOI
+          <i class="fas fa-external-link-alt"></i> Publisher
         </a>
       {% else %}
         <a href="{{ post.paperurl }}" class="pub-link pub-link--paper" target="_blank">
@@ -65,7 +68,7 @@
     
     {% if post.slidesurl %}
       <a href="{{ post.slidesurl }}" class="pub-link pub-link--slides" target="_blank">
-        <i class="fas fa-presentation"></i> Slides
+        <i class="fas fa-desktop"></i> Slides
       </a>
     {% endif %}
     

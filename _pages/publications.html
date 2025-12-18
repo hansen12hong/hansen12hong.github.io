@@ -7,27 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
-<style>
-.pub-intro {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 10px;
-  padding: 1.5em;
-  margin-bottom: 2em;
-  border-left: 4px solid #52adc8;
-}
-.pub-intro p {
-  margin: 0;
-  color: #555;
-  line-height: 1.6;
-}
-</style>
-
-<div class="pub-intro">
-  <p>My research focuses on <strong>environmental economics</strong> and <strong>development economics</strong>, with particular emphasis on environmental regulation, agricultural economics, and political economy in China.</p>
-  {% if site.author.googlescholar %}
-    <p style="margin-top: 0.5em;">📚 Find more on my <a href="{{site.author.googlescholar}}">Google Scholar profile</a>.</p>
-  {% endif %}
-</div>
+{% if site.author.googlescholar %}
+  <p style="margin-bottom: 1.5em; color: #666;">You can also find my articles on <a href="{{site.author.googlescholar}}">Google Scholar</a>.</p>
+{% endif %}
 
 <!-- Publications by Category -->
 {% if site.publication_category %}
@@ -38,14 +20,7 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2 class="pub-section-header">
-          {% if category[0] == 'manuscripts' %}
-            <i class="fas fa-bookmark"></i>
-          {% else %}
-            <i class="fas fa-pencil-alt"></i>
-          {% endif %}
-          {{ category[1].title }}
-        </h2>
+        <h2 class="pub-section-header">{{ category[1].title }}</h2>
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single-publication.html %}

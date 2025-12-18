@@ -1,0 +1,194 @@
+/* ==========================================================================
+   CUSTOM GLOBAL STYLES - Typography and Layout Enhancements
+   ========================================================================== */
+
+/* Enhanced Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #2980b9;
+  }
+}
+
+/* Content area improvements */
+.page__content {
+  p {
+    margin-bottom: 1em;
+  }
+  
+  ul, ol {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+}
+
+/* Author profile sidebar enhancements */
+.author__avatar {
+  img {
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.author__name {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.author__bio {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.5;
+}
+
+.author__urls {
+  a {
+    color: #555;
+    font-size: 0.9em;
+    
+    &:hover {
+      color: #3498db;
+    }
+  }
+}
+
+/* Page title */
+.page__title {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1em;
+}
+
+/* Archive page improvements */
+.archive__item-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  
+  a {
+    color: #2c3e50;
+    
+    &:hover {
+      color: #3498db;
+    }
+  }
+}
+
+/* Footer improvements */
+.page__footer {
+  background: #f8f9fa;
+  border-top: 1px solid #e8e8e8;
+  
+  a {
+    color: #666;
+    
+    &:hover {
+      color: #3498db;
+    }
+  }
+}
+
+/* Masthead/Navigation */
+.masthead {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.greedy-nav {
+  a {
+    color: #2c3e50;
+    font-weight: 500;
+    
+    &:hover {
+      color: #3498db;
+    }
+  }
+  
+  .visible-links a {
+    &::before {
+      background: #3498db;
+    }
+  }
+}
+
+/* Better blockquotes */
+blockquote {
+  border-left: 3px solid #3498db;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
+
+/* Code styling */
+code {
+  background: #f4f4f4;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Selection color */
+::selection {
+  background: #3498db;
+  color: white;
+}
+
+::-moz-selection {
+  background: #3498db;
+  color: white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus states for accessibility */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
