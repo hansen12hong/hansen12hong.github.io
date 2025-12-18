@@ -1,0 +1,239 @@
+/* ==========================================================================
+   PUBLICATIONS - Custom Styles for Research Page
+   ========================================================================== */
+
+/* Publication Card Container */
+.publication-card {
+  background: var(--global-bg-color, #fff);
+  border: 1px solid var(--global-border-color, #e1e1e1);
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--global-primary-color, #52adc8);
+  }
+}
+
+/* Publication Status Badges */
+.pub-badge {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pub-badge--published {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+.pub-badge--rr {
+  background: linear-gradient(135deg, #fd7e14, #ffc107);
+  color: white;
+}
+
+.pub-badge--wp {
+  background: linear-gradient(135deg, #6c757d, #adb5bd);
+  color: white;
+}
+
+/* Publication Title */
+.pub-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0.5em 0;
+  color: var(--global-text-color, #222);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--global-primary-color, #52adc8);
+    }
+  }
+}
+
+/* Publication Venue/Journal */
+.pub-venue {
+  font-style: italic;
+  color: var(--global-text-color-light, #666);
+  margin: 0.5em 0;
+  font-size: 0.95em;
+  
+  .venue-name {
+    font-weight: 500;
+  }
+  
+  .pub-year {
+    font-style: normal;
+    color: var(--global-text-color, #444);
+  }
+}
+
+/* Publication Abstract/Excerpt */
+.pub-abstract {
+  color: var(--global-text-color-light, #555);
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 3px solid var(--global-primary-color, #52adc8);
+  
+  /* Collapsible abstract */
+  &.collapsed {
+    max-height: 4.8em;
+    overflow: hidden;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1.5em;
+      background: linear-gradient(transparent, var(--global-bg-color, #fff));
+    }
+  }
+}
+
+/* Publication Links/Buttons */
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4em 1em;
+  font-size: 0.85em;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  
+  i, .fa, .fas, .far, .fab {
+    margin-right: 0.4em;
+  }
+}
+
+.pub-link--paper {
+  background: var(--global-primary-color, #52adc8);
+  color: white;
+  
+  &:hover {
+    background: darken(#52adc8, 10%);
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+.pub-link--doi {
+  background: #e74c3c;
+  color: white;
+  
+  &:hover {
+    background: darken(#e74c3c, 10%);
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+.pub-link--slides {
+  background: #9b59b6;
+  color: white;
+  
+  &:hover {
+    background: darken(#9b59b6, 10%);
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+.pub-link--code {
+  background: #333;
+  color: white;
+  
+  &:hover {
+    background: #000;
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+/* Section Headers for Publications */
+.pub-section-header {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--global-text-color, #222);
+  margin: 2em 0 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid var(--global-primary-color, #52adc8);
+  display: flex;
+  align-items: center;
+  
+  i {
+    margin-right: 0.5em;
+    color: var(--global-primary-color, #52adc8);
+  }
+}
+
+/* Authors styling */
+.pub-authors {
+  font-size: 0.9em;
+  color: var(--global-text-color-light, #666);
+  margin: 0.25em 0;
+  
+  .author-me {
+    font-weight: 600;
+    color: var(--global-text-color, #333);
+  }
+}
+
+/* Coauthors with links */
+.pub-coauthors {
+  font-size: 0.85em;
+  color: var(--global-text-color-light, #777);
+  
+  a {
+    color: var(--global-primary-color, #52adc8);
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publication-card {
+    padding: 1em;
+  }
+  
+  .pub-title {
+    font-size: 1em;
+  }
+  
+  .pub-links {
+    flex-direction: column;
+  }
+  
+  .pub-link {
+    justify-content: center;
+  }
+}
