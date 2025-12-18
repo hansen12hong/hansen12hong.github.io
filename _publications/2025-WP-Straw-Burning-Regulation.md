@@ -6,7 +6,8 @@ permalink: /publication/2025-WP-Straw-Burning-Regulation
 authors: '<b>Hai Hong</b>, Kevin Chen'
 excerpt: 'This paper examines the consequences of straw burning regulation in China. We find that the regulation reduces burning activities and air pollution. However, farmers responds to the policy by increasing fertilizer and pesticide usage, leading to unintended water pollution.'
 date: 2025-01-31
-venue: 'Revise & Resubmit at Journal of Development Economics'
+venue: 'Journal of Development Economics'
+status: 'Revise & Resubmit'
 award: 'CAER-IFPRI Best Paper Award'
 paperurl: '/files/2025-WP-Straw-Burning-Regulation.pdf'
 ---

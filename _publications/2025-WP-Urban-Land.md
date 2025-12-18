@@ -6,7 +6,8 @@ permalink: /publication/2025-WP-Urban-Land
 authors: '<b>Hai Hong</b>, Yi Shi, Zenghui Li, Kevin Chen'
 excerpt: 'This paper investigates the effect of urban expansion on agricultural land productivity. We show that urban expansion leads to a decline in both the quantity and quality of agricultural land. The implementation of strict farmland protection policies may inadvertently reduce land quality when local leaders prioritize economic growth. The decrease in land quality reduces agricultural production and mechanization, while increasing the use of fertilizer as substitutes.'
 date: 2025-01-31
-venue: 'Reject & Resubmit at Regional Science and Urban Economics'
+venue: 'Regional Science and Urban Economics'
+status: 'Reject & Resubmit'
 paperurl: '/files/2025-WP-Urban-Land.pdf'
 ---
 

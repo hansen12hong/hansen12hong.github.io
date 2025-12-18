@@ -13,30 +13,6 @@
 {% endif %}
 
 <div class="publication-card">
-  <!-- Status Badge -->
-  <div class="pub-badges">
-    {% if post.status == 'Accepted' %}
-      <span class="pub-badge pub-badge--accepted">Accepted</span>
-    {% elsif post.category == 'manuscripts' %}
-      <span class="pub-badge pub-badge--published">Published</span>
-    {% elsif post.category == 'pre_doctoral' %}
-      <span class="pub-badge pub-badge--predoc">Pre-doctoral</span>
-    {% elsif post.venue contains 'Conditionally Accepted' %}
-      <span class="pub-badge pub-badge--ca">Conditionally Accepted</span>
-    {% elsif post.venue contains 'Reject' and post.venue contains 'Resubmit' %}
-      <span class="pub-badge pub-badge--reject-resubmit">Reject & Resubmit</span>
-    {% elsif post.venue contains 'Revise' or post.venue contains 'R&R' %}
-      <span class="pub-badge pub-badge--rr">Revise & Resubmit</span>
-    {% elsif post.category == 'work_in_progress' %}
-      <span class="pub-badge pub-badge--wip">Work in Progress</span>
-    {% else %}
-      <span class="pub-badge pub-badge--wp">Working Paper</span>
-    {% endif %}
-    {% if post.award %}
-      <span class="pub-badge pub-badge--award">{{ post.award }}</span>
-    {% endif %}
-  </div>
-
   <!-- Title - Link directly to paper URL -->
   <h3 class="pub-title">
     {% if post.paperurl %}
@@ -55,12 +31,10 @@
   <p class="pub-venue">
     {% if post.status == 'Accepted' %}
       <span class="venue-name">{{ post.venue }}</span>, <span class="venue-status">Accepted</span>
-    {% elsif post.category == 'manuscripts' %}
-      <span class="venue-name">{{ post.venue }}</span>, {{ post.date | date: "%Y" }}
-    {% elsif post.category == 'pre_doctoral' %}
+    {% elsif post.category == 'manuscripts' or post.category == 'pre_doctoral' %}
       <span class="venue-name">{{ post.venue }}</span>{% if post.venue != 'Working Paper' %}, {{ post.date | date: "%Y" }}{% endif %}
-    {% elsif post.venue contains 'Conditionally Accepted' or post.venue contains 'Revise' or post.venue contains 'R&R' or post.venue contains 'Resubmit' %}
-      <span class="venue-status">{{ post.venue }}</span>
+    {% elsif post.status %}
+      <span class="venue-status">{{ post.status }}</span> at <span class="venue-name">{{ post.venue }}</span>
     {% else %}
       <span class="venue-name">{{ post.venue }}</span>
     {% endif %}
