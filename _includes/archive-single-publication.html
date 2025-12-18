@@ -38,12 +38,18 @@
     {% else %}
       <span class="venue-name">{{ post.venue }}</span>
     {% endif %}
+    {% if post.award %}
+      <span class="pub-award">🏆 {{ post.award }}</span>
+    {% endif %}
   </p>
 
-  <!-- Abstract/Excerpt -->
+  <!-- Abstract/Excerpt with expandable feature -->
   {% if post.excerpt %}
-  <div class="pub-abstract">
-    {{ post.excerpt | markdownify | strip_html | truncatewords: 50 }}
+  <div class="pub-abstract-container">
+    <div class="pub-abstract" onclick="this.classList.toggle('expanded')">
+      {{ post.excerpt | markdownify | strip_html }}
+    </div>
+    <span class="pub-read-more" onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? '[Show less]' : '[Read more]';">[Read more]</span>
   </div>
   {% endif %}
 </div>
