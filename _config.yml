@@ -299,15 +299,21 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 
 # Archives
