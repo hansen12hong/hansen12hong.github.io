@@ -3,6 +3,7 @@ title: "Order! The Border: Multitasking, Air Pollution Regulation, and Local Gov
 collection: publications
 category: manuscripts
 permalink: /publication/2025-JEEM-OrderBorder
+authors: '<b>Hai Hong</b>, Yongbin Huang'
 excerpt: "This paper presents new evidence on how multitasking local governments' strategic responses to top-down environmental regulations can induce pollution in border areas. We find that after the environmental regualtion, pollution in border counties significantly increased. We also identify salient window dressing effects, that the pollution in the border decreases when policy inspection comes and increases soon after the inspection ends."
 date: 2025-02-17
 venue: 'Journal of Environmental Economics and Management'

@@ -39,16 +39,52 @@
   border: 1px solid #c3e6cb;
 }
 
+.pub-badge--accepted {
+  background: #cce5ff;
+  color: #004085;
+  border: 1px solid #b8daff;
+}
+
+.pub-badge--ca {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
 .pub-badge--rr {
   background: #fff3cd;
   color: #856404;
   border: 1px solid #ffeeba;
 }
 
+.pub-badge--reject-resubmit {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
 .pub-badge--wp {
   background: #e2e3e5;
   color: #383d41;
   border: 1px solid #d6d8db;
+}
+
+.pub-badge--predoc {
+  background: #e7e3f3;
+  color: #5a4b8c;
+  border: 1px solid #d4cde8;
+}
+
+.pub-badge--wip {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+.pub-badge--award {
+  background: #ffeaa7;
+  color: #b7791f;
+  border: 1px solid #f6e05e;
 }
 
 /* Publication Title */
@@ -203,5 +239,26 @@
   .pub-link {
     justify-content: center;
     width: 100%;
+  }
+}
+
+/* Work in Progress Items - Simple title-only display */
+.wip-item {
+  padding: 0.5em 0;
+  margin-bottom: 0.3em;
+  
+  .wip-title {
+    font-size: 0.95em;
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.5;
+    font-family: $serif;
+  }
+  
+  .wip-coauthors {
+    font-size: 0.85em;
+    color: #666;
+    margin: 0.2em 0 0 0;
+    font-style: italic;
   }
 }

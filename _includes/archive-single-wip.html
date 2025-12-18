@@ -1,0 +1,14 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="wip-item">
+  <p class="wip-title">{{ title }}</p>
+  {% if post.coauthors %}
+  <p class="wip-coauthors">(with {{ post.coauthors }})</p>
+  {% endif %}
+</div>

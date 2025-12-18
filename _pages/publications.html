@@ -23,7 +23,11 @@ author_profile: true
         <h2 class="pub-section-header">{{ category[1].title }}</h2>
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single-publication.html %}
+      {% if category[0] == 'work_in_progress' %}
+        {% include archive-single-wip.html %}
+      {% else %}
+        {% include archive-single-publication.html %}
+      {% endif %}
     {% endfor %}
   {% endfor %}
 {% else %}

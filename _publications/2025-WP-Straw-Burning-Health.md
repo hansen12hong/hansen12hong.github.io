@@ -1,11 +1,13 @@
 ---
-title: "When the Wind Blows: Agricultural Fire Exposure, Parental Investment, and Long-term Outcomes "
-collection: Working Paper
-category: working_papers
-permalink: /publication/2025-WP-Straw-Burning-Health
-excerpt: 'This paper investigates the long-term consequences of in-utero exposure to agricultural fires in rural China. We show that in-utero exposure to agricultural fires significantly reduces individuals’ health, cognitive, and non-cognitive performance in adolescence, and decreases education years and earnings in adulthood. Households respond to the negative health shock by reallocating investment away from exposed children. The provision of Health insurance can largely offset the deleterious effects of agricultural fire exposure.'
-date: 2025-07-29
-venue: 'Revise & Resubmit at Jounal of Population Economics'
+title: "When the Wind Blows: Agricultural Fire Exposure, Parental Investment, and Long-term Outcomes"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-JPE-Straw-Burning-Health
+authors: '<b>Hai Hong</b>, Kevin Chen'
+excerpt: 'This paper investigates the long-term consequences of in-utero exposure to agricultural fires in rural China. We show that in-utero exposure to agricultural fires significantly reduces individuals' health, cognitive, and non-cognitive performance in adolescence, and decreases education years and earnings in adulthood. Households respond to the negative health shock by reallocating investment away from exposed children. The provision of Health insurance can largely offset the deleterious effects of agricultural fire exposure.'
+date: 2025-12-01
+venue: 'Journal of Population Economics'
+status: 'Accepted'
 paperurl: '/files/2025-WP-Straw-Burning-Health.pdf'
 ---
 

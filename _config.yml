@@ -83,6 +83,10 @@ publication_category:
     title: 'Publications'    
   working_papers:
     title: 'Working Papers'
+  pre_doctoral:
+    title: 'Pre-doctoral Work'
+  work_in_progress:
+    title: 'Work in Progress'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

@@ -1,8 +1,9 @@
 ---
 title: "The Premium of the Old Neighborhood Upgrading Projects in China: Evidence from Hefei"
 collection: publications
-category: manuscripts
+category: pre_doctoral
 permalink: /publication/2024-JHBE-Neighborhood-Upgrading
+authors: 'Yongbin Huang, <b>Hai Hong</b>'
 excerpt: 'This paper examine the premium effects of neiborhood upgrading projects in China, Hefei. We show that surrounding neighborhoods within a 500-meter radius of the upgrading areas experienced a significant increase in prices by 6.01% compared to neighborhoods located beyond this range. Mechanism analysis shows the old neighborhood upgrading projects revitalize community vitality, thereby increasing housing prices of surrounding neighborhoods.'
 date: 2024-10-15
 venue: 'Journal of Housing and the Built Environment'
