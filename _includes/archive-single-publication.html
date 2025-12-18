@@ -72,31 +72,5 @@
     {{ post.excerpt | markdownify | strip_html | truncatewords: 50 }}
   </div>
   {% endif %}
-
-  <!-- Links -->
-  <div class="pub-links">
-    {% if post.paperurl %}
-      {% if post.paperurl contains 'doi.org' %}
-        <a href="{{ post.paperurl }}" class="pub-link pub-link--doi" target="_blank">
-          <i class="fas fa-external-link-alt"></i> Publisher
-        </a>
-      {% else %}
-        <a href="{{ post.paperurl }}" class="pub-link pub-link--paper" target="_blank">
-          <i class="fas fa-file-pdf"></i> PDF
-        </a>
-      {% endif %}
-    {% endif %}
-    
-    {% if post.slidesurl %}
-      <a href="{{ post.slidesurl }}" class="pub-link pub-link--slides" target="_blank">
-        <i class="fas fa-desktop"></i> Slides
-      </a>
-    {% endif %}
-    
-    {% if post.codeurl %}
-      <a href="{{ post.codeurl }}" class="pub-link pub-link--code" target="_blank">
-        <i class="fab fa-github"></i> Code
-      </a>
-    {% endif %}
-  </div>
 </div>
+
