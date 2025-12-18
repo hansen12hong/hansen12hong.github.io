@@ -12,6 +12,8 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign excerpt_length = post.excerpt | strip_html | size %}
+
 <div class="publication-card">
   <!-- Title - Link directly to paper URL -->
   <h3 class="pub-title">
@@ -43,14 +45,20 @@
     {% endif %}
   </p>
 
-  <!-- Abstract/Excerpt with expandable feature -->
+  <!-- Abstract/Excerpt - only show Read more for long excerpts (>350 chars) -->
   {% if post.excerpt %}
-  <div class="pub-abstract-container">
-    <div class="pub-abstract" onclick="this.classList.toggle('expanded')">
+    {% if excerpt_length > 350 %}
+    <div class="pub-abstract-container">
+      <div class="pub-abstract" onclick="this.classList.toggle('expanded')">
+        {{ post.excerpt | markdownify | strip_html }}
+      </div>
+      <span class="pub-read-more" onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? '[Show less]' : '[Read more]';">[Read more]</span>
+    </div>
+    {% else %}
+    <div class="pub-abstract pub-abstract--full">
       {{ post.excerpt | markdownify | strip_html }}
     </div>
-    <span class="pub-read-more" onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? '[Show less]' : '[Read more]';">[Read more]</span>
-  </div>
+    {% endif %}
   {% endif %}
 </div>
 

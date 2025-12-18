@@ -149,6 +149,13 @@
   &.expanded {
     max-height: 50em; /* large enough for full content */
   }
+  
+  &--full {
+    max-height: none;
+    overflow: visible;
+    cursor: default;
+    margin: 0.75em 0;
+  }
 }
 
 .pub-read-more {
