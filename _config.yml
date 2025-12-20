@@ -77,16 +77,14 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
     title: 'Publications'    
   working_papers:
     title: 'Working Papers'
-  pre_doctoral:
-    title: 'Pre-doctoral Work'
   work_in_progress:
     title: 'Work in Progress'
+  pre_doctoral:
+    title: 'Pre-doctoral Work'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
