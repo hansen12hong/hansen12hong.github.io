@@ -235,12 +235,11 @@
   
   .masthead__menu-item--fixed {
     position: absolute;
-    left: 90%; /* 将Research链接放置在导航栏右侧的位置 */
-    transform: translateX(-50%); /* 使链接文本居中于2/3位置 */
+    right: 1rem; /* 将Research链接放置在导航栏最右边 */
+    left: auto;
     
     @media (max-width: 768px) {
       position: static; /* 在小屏幕上取消绝对定位 */
-      transform: none;
       margin-left: 1rem;
     }
   }
