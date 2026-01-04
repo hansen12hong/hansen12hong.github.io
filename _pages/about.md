@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a third-year PhD student at [School of Public Affairs](https://www.spa.zju.edu.cn/spachinese/) and [China Academy for Rural Development (CARD)](https://www.card.zju.edu.cn/), [Zhejiang University](https://www.zju.edu.cn/). I received my Bachelor's degree in Economics from School of Economics, Anhui University.
+Welcome! I'm a third-year PhD candidate at [School of Public Affairs](https://www.spa.zju.edu.cn/spachinese/) and [China Academy for Rural Development (CARD)](https://www.card.zju.edu.cn/), [Zhejiang University](https://www.zju.edu.cn/). I received my Bachelor's degree in Economics from School of Economics, Anhui University.
 
 ## Research Interests
 
