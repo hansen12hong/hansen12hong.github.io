@@ -25,6 +25,6 @@ My research primarily focuses on **environmental economics** and **development e
 
 ## Contact
 
-📧 Email: [haihong@zju.edu.cn](mailto:haihong@zju.edu.cn)
+Email: [haihong@zju.edu.cn](mailto:haihong@zju.edu.cn)
 
-📄 [Download CV](../assets/CV_Hai.pdf)
+[Download CV](../assets/CV_Hai.pdf)
