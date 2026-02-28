@@ -1,13 +1,12 @@
 ---
 title: "When the Fire Ends: Straw Burning, Regulation, and Pollution Substitution"
-collection: CAER-IFPRI Best Paper Award
-category: working_papers
-permalink: /publication/2025-WP-Straw-Burning-Regulation
+collection: publications
+category: manuscripts
+permalink: /publication/2026-JDE-Straw-Burning-Regulation
 authors: '<b>Hai Hong</b>, Kevin Chen'
 excerpt: 'This paper examines the consequences of straw burning regulation in China. We find that the regulation reduces burning activities and air pollution. However, farmers responds to the policy by increasing fertilizer and pesticide usage, leading to unintended water pollution.'
-date: 2025-01-31
+date: 2026-01-01
 venue: 'Journal of Development Economics'
-status: 'Revise & Resubmit'
 award: 'CAER-IFPRI Best Paper Award'
 paperurl: '/files/2025-WP-Straw-Burning-Regulation.pdf'
 ---
