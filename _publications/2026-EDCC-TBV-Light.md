@@ -3,7 +3,7 @@ title: "In the Name of Love: Policy Imitation, Political Incentives, and Local E
 collection: publications
 category: manuscripts
 permalink: /publication/2026-EDCC-TBV-Light
-authors: '<b>Hai Hong</b>, Yunfei Zhang, Kevin Chen'
+coauthors: 'Yunfei Zhang and Kevin Chen'
 excerpt: 'This paper investigates the economic impacts of the "Taobao Villages (TBVs)" program in China, a bottom-up pilot on rural e-commerce that is imitated na-tionwide under top-down directives. Contrary to previous findings that confirm the positive role of TBVs in promoting village economies, our nationwide analysis finds that the establishment of TBVs significantly reduces night light of townships. Suugestive evidence shows that the strategic behavior of local governments could be the potential channel.'
 date: 2026-01-02
 venue: 'Economic Development and Cultural Change'

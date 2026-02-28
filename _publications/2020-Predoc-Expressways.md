@@ -3,7 +3,7 @@ title: "Expressways and the Economic Growth of Border Areas"
 collection: publications
 category: pre_doctoral
 permalink: /publication/2020-Predoc-Expressways
-authors: 'Yongbin Huang, <b>Hai Hong</b>'
+coauthors: 'Yongbin Huang'
 date: 2020-01-01
 venue: 'Working Paper'
 ---

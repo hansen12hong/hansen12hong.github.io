@@ -1,64 +1,50 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
 {% endif %}
 
-{% assign excerpt_length = post.excerpt | strip_html | size %}
-
-<div class="publication-card">
-  <!-- Title - Link directly to paper URL -->
-  <h3 class="pub-title">
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}" target="_blank">{{ title }}</a>
-    {% else %}
-      {{ title }}
+<div class="pub-entry">
+  <p class="pub-main">
+    <!-- Title -->
+    <span class="pub-title">"{{ title }}"</span>
+    <!-- Authors -->
+    {% if post.coauthors %}
+    <span class="pub-coauthors">(with {{ post.coauthors }})</span>
     {% endif %}
-  </h3>
-
-  <!-- Authors (if specified) -->
-  {% if post.authors %}
-  <p class="pub-authors">{{ post.authors }}</p>
-  {% endif %}
-
-  <!-- Venue and Year -->
-  <p class="pub-venue">
-    {% if post.status == 'Accepted' %}
-      <span class="venue-name">{{ post.venue }}</span>, <span class="venue-status">Accepted</span>
-    {% elsif post.category == 'manuscripts' or post.category == 'pre_doctoral' %}
-      <span class="venue-name">{{ post.venue }}</span>{% if post.venue != 'Working Paper' %}, {{ post.date | date: "%Y" }}{% endif %}
-    {% elsif post.status %}
-      <span class="venue-status">{{ post.status }}</span> at <span class="venue-name">{{ post.venue }}</span>
-    {% else %}
-      <span class="venue-name">{{ post.venue }}</span>
-    {% endif %}
+    <br>
+    <!-- Venue and Status -->
+    <span class="pub-venue">
+      {% if post.status == 'Accepted' %}
+        <em>{{ post.venue }}</em>, Accepted.
+      {% elsif post.category == 'manuscripts' or post.category == 'pre_doctoral' %}
+        <em>{{ post.venue }}</em>{% if post.venue != 'Working Paper' %}, {{ post.date | date: "%Y" }}.{% endif %}
+      {% elsif post.status %}
+        {{ post.status }} at <em>{{ post.venue }}</em>.
+      {% else %}
+        <em>{{ post.venue }}</em>.
+      {% endif %}
+    </span>
     {% if post.award %}
-      <span class="pub-award">🏆 {{ post.award }}</span>
+    <span class="pub-award">{{ post.award }}.</span>
     {% endif %}
+    <!-- Links -->
+    <span class="pub-links">
+      {% if post.paperurl %}
+      [<a href="{{ post.paperurl }}" target="_blank">PDF</a>]
+      {% endif %}
+      {% if post.excerpt %}
+      [<a href="javascript:void(0);" class="abstract-toggle" onclick="var abs=this.closest('.pub-entry').querySelector('.pub-abstract'); abs.style.display=(abs.style.display==='none'||abs.style.display==='')?'block':'none'; this.textContent=(abs.style.display==='block')?'Hide Abstract':'Abstract';">Abstract</a>]
+      {% endif %}
+    </span>
   </p>
-
-  <!-- Abstract/Excerpt - only show Read more for very long excerpts (RSUE paper >500 chars) -->
+  <!-- Abstract -->
   {% if post.excerpt %}
-    {% if excerpt_length > 500 %}
-    <div class="pub-abstract-container">
-      <div class="pub-abstract" onclick="this.classList.toggle('expanded')">
-        {{ post.excerpt | markdownify | strip_html }}
-      </div>
-      <span class="pub-read-more" onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? '[Show less]' : '[Read more]';">[Read more]</span>
-    </div>
-    {% else %}
-    <div class="pub-abstract pub-abstract--full">
-      {{ post.excerpt | markdownify | strip_html }}
-    </div>
-    {% endif %}
+  <div class="pub-abstract" style="display:none;">
+    {{ post.excerpt | markdownify | strip_html }}
+  </div>
   {% endif %}
 </div>
 
