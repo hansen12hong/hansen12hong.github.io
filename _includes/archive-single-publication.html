@@ -18,13 +18,13 @@
     <!-- Venue and Status -->
     <span class="pub-venue">
       {% if post.status == 'Accepted' %}
-        <em>{{ post.venue }}</em>, Accepted.
+        <em><strong>{{ post.venue }}</strong></em>, Accepted.
       {% elsif post.category == 'manuscripts' or post.category == 'pre_doctoral' %}
-        <em>{{ post.venue }}</em>{% if post.venue != 'Working Paper' %}, {{ post.date | date: "%Y" }}.{% endif %}
+        <em><strong>{{ post.venue }}</strong></em>{% if post.venue != 'Working Paper' %}, {{ post.date | date: "%Y" }}.{% endif %}
       {% elsif post.status %}
-        {{ post.status }} at <em>{{ post.venue }}</em>.
+        {{ post.status }} at <em><strong>{{ post.venue }}</strong></em>.
       {% else %}
-        <em>{{ post.venue }}</em>.
+        <em><strong>{{ post.venue }}</strong></em>.
       {% endif %}
     </span>
     {% if post.award %}

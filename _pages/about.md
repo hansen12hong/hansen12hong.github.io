@@ -17,12 +17,6 @@ My research primarily focuses on **environmental economics** and **development e
 - Agricultural Economics and Rural Development  
 - Political Economy and Chinese Economy
 
-## News
-
-- **Dec 2025**: Paper "When the Wind Blows" accepted at *Journal of Population Economics*
-- **Feb 2025**: Paper "Order! The Border" accepted at *Journal of Environmental Economics and Management*
-- **2025**: Papers under R&R at *Journal of Development Economics*, conditionally accepted at *Economic Development and Cultural Change*
-
 ## Contact
 
 Email: [haihong@zju.edu.cn](mailto:haihong@zju.edu.cn)
