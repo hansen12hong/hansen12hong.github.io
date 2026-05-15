@@ -6,7 +6,17 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="pub-entry">
+{% assign show_abstract = false %}
+{% if post.excerpt and post.hide_abstract != true %}
+  {% assign show_abstract = true %}
+{% endif %}
+
+{% assign has_details = false %}
+{% if post.status or post.venue or post.award or post.paperurl or show_abstract %}
+  {% assign has_details = true %}
+{% endif %}
+
+<div class="pub-entry{% unless has_details %} pub-entry-compact{% endunless %}">
   <p class="pub-main">
     <!-- Title -->
     <span class="pub-title">"{{ title }}"</span>
@@ -14,6 +24,7 @@
     {% if post.coauthors %}
     <span class="pub-coauthors">(with {{ post.coauthors }})</span>
     {% endif %}
+    {% if has_details %}
     <br>
     <!-- Venue and Status -->
     <span class="pub-venue">
@@ -39,6 +50,7 @@
       [<a href="javascript:void(0);" class="abstract-toggle" onclick="var abs=this.closest('.pub-entry').querySelector('.pub-abstract'); abs.style.display=(abs.style.display==='none'||abs.style.display==='')?'block':'none'; this.textContent=(abs.style.display==='block')?'Hide Abstract':'Abstract';">Abstract</a>]
       {% endif %}
     </span>
+    {% endif %}
   </p>
   <!-- Abstract -->
   {% if post.excerpt and post.hide_abstract != true %}
