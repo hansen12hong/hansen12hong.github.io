@@ -23,7 +23,7 @@
         <em><strong>{{ post.venue }}</strong></em>{% if post.venue != 'Working Paper' %}, {{ post.date | date: "%Y" }}.{% endif %}
       {% elsif post.status %}
         {{ post.status }} at <em><strong>{{ post.venue }}</strong></em>.
-      {% else %}
+      {% elsif post.venue %}
         <em><strong>{{ post.venue }}</strong></em>.
       {% endif %}
     </span>
