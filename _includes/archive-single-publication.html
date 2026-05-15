@@ -35,13 +35,13 @@
       {% if post.paperurl %}
       [<a href="{{ post.paperurl }}" target="_blank">PDF</a>]
       {% endif %}
-      {% if post.excerpt %}
+      {% if post.excerpt and post.hide_abstract != true %}
       [<a href="javascript:void(0);" class="abstract-toggle" onclick="var abs=this.closest('.pub-entry').querySelector('.pub-abstract'); abs.style.display=(abs.style.display==='none'||abs.style.display==='')?'block':'none'; this.textContent=(abs.style.display==='block')?'Hide Abstract':'Abstract';">Abstract</a>]
       {% endif %}
     </span>
   </p>
   <!-- Abstract -->
-  {% if post.excerpt %}
+  {% if post.excerpt and post.hide_abstract != true %}
   <div class="pub-abstract" style="display:none;">
     {{ post.excerpt | markdownify | strip_html }}
   </div>

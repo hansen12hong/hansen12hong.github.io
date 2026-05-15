@@ -4,5 +4,6 @@ collection: Working Paper
 category: working_papers
 permalink: /publication/2025-WP-Dust-Storms-Migration
 coauthors: 'Yuchen Guo and Wentong Sun'
-date: 2025-12-06
+date: 2025-12-05
+hide_abstract: true
 ---
