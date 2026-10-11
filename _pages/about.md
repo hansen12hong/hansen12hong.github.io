@@ -9,7 +9,7 @@ redirect_from:
 
 Welcome! I'm a fourth-year PhD candidate at [School of Public Affairs](https://www.spa.zju.edu.cn/spachinese/) and [China Academy for Rural Development (CARD)](https://www.card.zju.edu.cn/), [Zhejiang University](https://www.zju.edu.cn/). I received my Bachelor's degree in Economics from School of Economics, Anhui University.
 
-During the 2026-2027 academic year, I will be a visiting scholar at the [University of Toronto](https://www.utoronto.ca/).
+I am currently a visiting graduate student at the [University of Toronto](https://www.utoronto.ca/) for the 2026-2027 academic year.
 
 ## Research Interests
 
